@@ -1,35 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
 </head>
+
 <body>
-    <h2>Form</h2>
-    <!-- Field -->
-    <label for="username">Username : </label><input type="text" id="username">
-    <br>
-    <label for="password">Password : </label><input type="password" id="password">
-    <br>
-    <p>Jenis Kelamin</p>
-    <!-- Radio Button -->
-    <input type="radio" name="jeniskelamin" id="lakilaki"><label for="lakilaki">Laki-laki</label>
-    <input type="radio" name="jeniskelamin" id="perempuan"><label for="perempuan">Perempuan</label>
-    <br>
-    <p>Hobi</p>
-    <!-- Checkbox -->
-    <input type="checkbox" name="hobi" id="ngoding"><label for="ngoding">Ngoding</label>
-    <br>
-    <input type="checkbox" name="hobi" id="makan"><label for="makan">Makan</label>
-    <br>
-    <input type="checkbox" name="hobi" id="olahraga"><label for="olahraga">Olahraga</label>
-    <br>
-    <input type="checkbox" name="hobi" id="tidur"><label for="tidur">Tidur</label>
-    <br>
-    <!-- Button -->
-    <button type="submit" value="Kirim"></button>
-    <button type="reset" value="Reset"></button>
+    <form>
+        <h2>Form</h2>
+        <table border="0" cellspacing="0">
+            <tr>
+                <!-- Field -->
+                <td align="right"><label for="username">Username : </label></td>
+                <td><input type="text" id="username"></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="password">Password : </label></td>
+                <td><input type="password" id="password"></td>
+            </tr>
+            <tr>
+                <!-- Radio Button -->
+                <td align="right"><label for="jeniskelamin">Jenis Kelamin : </label></td>
+                <td>
+                    <input type="radio" name="jeniskelamin" id="lakilaki"><label for="lakilaki">Laki-laki</label>
+                    <input type="radio" name="jeniskelamin" id="perempuan"><label for="perempuan">Perempuan</label>
+                </td>
+            </tr>
+                <!-- Checkbox -->
+                <td align="right"><label for="hobi">Hobi : </label></td>
+                <td>
+                    <input type="checkbox" name="hobi" id="ngoding"><label for="ngoding">Ngoding</label>
+                    <br>
+                    <input type="checkbox" name="hobi" id="makan"><label for="makan">Makan</label>
+                    <br>
+                    <input type="checkbox" name="hobi" id="olahraga"><label for="olahraga">Olahraga</label>
+                    <br>
+                    <input type="checkbox" name="hobi" id="tidur"><label for="tidur">Tidur</label>
+                    <br>
+                </td>
+            <tr>
+                <!-- Text Area -->
+                <td align="right"><label for="alamat">Alamat : </label></td>
+                <td><textarea name="alamat" id="alamat" cols="20" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <!-- Button -->
+                <td colspan="2" align="center"><button type="submit">Kirim</button></td>
+            </tr>
+        </table>
+    </form>
 </body>
+
 </html>
